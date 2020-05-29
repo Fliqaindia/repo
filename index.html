@@ -136,6 +136,21 @@
 
 
 
+
+	<!-- <style>
+		.about-container {
+		  position: relative;
+		  text-align: center;
+		}
+		
+		.centered {
+		  position: absolute;
+		  top: 30%;
+		  left: 30%;
+		  transform: translate(-30%, -30%);
+		}
+			</style>
+
 	<section class="about">
 
 		<div class=" container about-container">
@@ -169,87 +184,56 @@
 			</div>
 		  </div>
 
-	</section>
+	</section> -->
+
+
 
 
 	<style>
-/* Container holding the image and the text */
-.about-container {
-  position: relative;
-  text-align: center;
-}
-
-/* Centered text */
-.centered {
-  position: absolute;
-  top: 30%;
-  left: 30%;
-  transform: translate(-30%, -30%);
-}
+		#recomm .item img {
+			display: block;
+			width: 50%;
+			height: 50%;
+			margin: 0 auto;
+		}
 	</style>
-
-	<!-- <div class="container about ">
-
-		<img class="img-fluid" src="/svg/about.svg" alt="" height="600">
-
-		<div class="about-text text-center">
-
-			<h1 class="text-center mt-4">About Us</h1>
-			<p class="text-center">Fliqaindia For Everyone</p>
-			<p class="container">
-				With this belief, we at Fliqaindia started our journey 5 years ago with
-				the belief
-		
-				that everyone has the right to quality photography to help them better
-				capture
-		
-				and conserve their special moments.
-		
-				We have been appreciated and recommended by Start Up India,
-				StartUp Bengal, Imagesbazaar
-		
-				and Digital India for our novel initiative. We have partnered with
-				Canvera to give
-		
-				you the best service possible. We are also trusted by Justdial,
-				WedMEGood, Shaadisaga, weddingwire and so many well known event
-				organisers.
-		
-				Now, we have expanded our business in different parts of India owing
-				to our happy customers who have believed in us, supported
-		
-				us and promoted us through strong word-of-mouth. We continue to
-				work hard
-		
-				towards realizing our vision of making quality photography accessible
-				and
-		
-				affordable for all.
-		
-			</p>
-
-		</div>
-
-	</div>  -->
 
 
 	<section class="recomm">
 		<div class="container">
 			<h1 class="recomm text-center"> recomm & Appri</h1>
-			<div id="recomm" class="owl-carousel owl-theme">
-				<div class="item">
-					<img class="recomm-img" src="/recomm/si.jpg" alt="" width="10" height="80">
-				</div>
-				<div class="item">
-					<img class="recomm-img" src="/recomm/ib.jpg" alt="" width="10" height="80">
-				</div>
-				<div class="item">
-					<img class="recomm-img" src="/recomm/sb.jpg" alt="" width="10" height="80">
-				</div>
+			<div id="recomm" class="recomm-carosel owl-carousel owl-theme">
+
+				<div class="item"><img src="/recomm/si.jpg"></div>
+				<div class="item"><img src="/recomm/ib.jpg"></div>
+				<div class="item"><img src="/recomm/sb.jpg"></div>
+
 			</div>
 		</div>
 	</section>
 
+	<style>
+		#whoare .item img {
+			display: block;
+			width: 70%;
+			height: 70%;
+			margin: 0 auto;
+		}
+	</style>
+
+
+	<section class="whoare">
+		<div class="container">
+			<h1 class="whoare text-center"> Who are with Us ?</h1>
+			<div id="whoare" class="whoare-carosel owl-carousel owl-theme">
+
+				<div class="item"><img src="/whoare/canvera.png"></div>
+				<div class="item"><img src="/whoare/shaadi-saga-logo.png"></div>
+				<div class="item"><img src="/whoare/WedMeGood-logo.jpg"></div>
+
+			</div>
+		</div>
+	</section>
 
 
 	<section class="service text-center">
@@ -485,7 +469,27 @@
 					items: 3
 				}
 			}
-})
+		})
+
+		$('#whoare').owlCarousel({
+			items: 5,
+			loop: true,
+			margin: 10,
+			autoplay: true,
+			autoplayTimeout: 2500,
+			autoplayHoverPause: false,
+			responsive: {
+				0: {
+					items: 3
+				},
+				600: {
+					items: 3
+				},
+				1000: {
+					items: 4
+				}
+			}
+		})
 
 	</script>
 
