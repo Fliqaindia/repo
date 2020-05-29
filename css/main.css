@@ -84,7 +84,7 @@
 /* MULTI CAROSEL ****************************************************************************************/
 
 .multi-carosel{
-    margin: 8% 0;
+    margin: 2% 0;
     padding: 4% 0;
     color: #230C33;
     text-transform: uppercase;
@@ -93,6 +93,15 @@
 .multi-carosel-text{
     margin: 8% 0;
 }
+
+#recomm{
+    margin: 2%;
+}
+
+.recomm-img{
+    width: 10px
+}
+
 
 
 /* TRUST  ****************************************************************************************/

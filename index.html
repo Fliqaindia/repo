@@ -19,7 +19,7 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-lg" style="background: #CAA8F5;">
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-lg" style="background: #D0E1FA;">
 		<div class="navbar-header d-flex col">
 			<a class="navbar-brand" href="#"><b>FliqaIndia</b></a>
 			<button type="button" data-target="#navbarCollapse" data-toggle="collapse"
@@ -63,47 +63,42 @@
 	</nav>
 
 	<style>
+		.hero-carosel{
+			margin: 4% 0;
+		}
+		@media only screen and (max-width: 600px) {
+		.hero-carosel{
+			margin: 20% 0
+		}
+		}
 		#hero-carosel .item img {
 			display: block;
 			width: 100%;
 			height: 100%;
-			min-height: 50vh;
 		}
 	</style>
 
 
-	<div id="hero-carosel" class="owl-carousel owl-theme ">
+	<div id="hero-carosel" class="hero-carosel owl-carousel owl-theme ">
 
-		<div class="item"><img src="img/hero_1.jpg"></div>
+		<div class="item"><img src="img/2-01.png"></div>
 		<div class="item"><img src="img/hero_2.jpg"></div>
 		<div class="item"><img src="img/hero_3.jpg"></div>
 
 	</div>
 
 
-	<!-- <div style="
-	text-align: center;
-			position: absolute;
-			z-index: 2;
-			width: 80%;
-	margin-left: 10%;
-	top: 540px;
-		">
-		<img class="img-fluid flower " src="/svg/flower.svg" alt="">
-	</div> -->
-
-
-	<div class="text-center" style="margin-top: 120px;">
+	<div class="text-center" style="margin-top: 10px;">
 		<button type="button" class="btn btn-lg rounded-pill shadow-lg"
-			style="background-color: #592E83;color: #fff;padding: 8px 60px;"> Book Now </button>
+			style="background-color: #2B9DB6;color: #fff;padding: 8px 60px;"> Book Now </button>
 	</div>
 
 
 
-	<section class="multi-carosel" style="background: #CAA8F5;">
+	<section class="multi-carosel" style="background: #D0E1FA;">
 		<div class="container">
 
-			<div id="multi-carosel" class="owl-carousel owl-theme text-center" style="background: #CAA8F5;">
+			<div id="multi-carosel" class="owl-carousel owl-theme text-center" style="background: #D0E1FA;">
 
 				<div class="item">
 					<img class="multi-carosel-svg" src="/svg/wedding.svg" width="120" height="120">
@@ -141,25 +136,59 @@
 
 
 
-	<!-- <section class="about">
+	<section class="about">
 
-	<h2>Text</h2>
+		<div class=" container about-container">
+			<img src="./svg/bg-about.svg" style="width:100%;">
+			<div class="centered">
+				<h1>About Us</h1>
+				<p>
+					With this belief, we at Fliqaindia started our journey 5 years ago with
+					the belief that everyone has the right to quality photography to help them better
+					capture and conserve their special moments. We have been appreciated and recommended by Start Up India,
+					StartUp Bengal, Imagesbazaar
+			
+					and Digital India for our novel initiative. We have partnered with
+					Canvera to give
+			
+					you the best service possible. We are also trusted by Justdial,
+					WedMEGood, Shaadisaga, weddingwire and so many well known event
+					organisers.
+			
+					Now, we have expanded our business in different parts of India owing
+					to our happy customers who have believed in us, supported
+			
+					us and promoted us through strong word-of-mouth. We continue to
+					work hard
+			
+					towards realizing our vision of making quality photography accessible
+					and
+			
+					affordable for all.
+				</p>
+			</div>
+		  </div>
 
-	<div class="conatiner">
-		<img class="img-fluid" src="/svg/about.svg" alt="">
-	</div>
-
-</section> -->
+	</section>
 
 
-	<!-- <style>
-		.about-text{
-			position: absolute;
-			top: 1400px;
-		}
+	<style>
+/* Container holding the image and the text */
+.about-container {
+  position: relative;
+  text-align: center;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  transform: translate(-30%, -30%);
+}
 	</style>
 
-	<div class="container about ">
+	<!-- <div class="container about ">
 
 		<img class="img-fluid" src="/svg/about.svg" alt="" height="600">
 
@@ -201,15 +230,37 @@
 
 		</div>
 
-	</div> -->
+	</div>  -->
+
+
+	<section class="recomm">
+		<div class="container">
+			<h1 class="recomm text-center"> recomm & Appri</h1>
+			<div id="recomm" class="owl-carousel owl-theme">
+				<div class="item">
+					<img class="recomm-img" src="/recomm/si.jpg" alt="" width="10" height="80">
+				</div>
+				<div class="item">
+					<img class="recomm-img" src="/recomm/ib.jpg" alt="" width="10" height="80">
+				</div>
+				<div class="item">
+					<img class="recomm-img" src="/recomm/sb.jpg" alt="" width="10" height="80">
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 
-	<section class="service">
+	<section class="service text-center">
 
 		<div class="container">
 
-			<div class="row text-center">
+			<h1 class="my-4 text-center">
+				Services We Offer
+			</h1>
+
+			<div class="row text-center text-center">
 				<div class="col">
 
 
@@ -287,7 +338,7 @@
 
 
 
-	<section class="trust" style="background: #CAA8F5;">
+	<section class="trust" style="background: #D0E1FA;">
 
 		<div class="container">
 			<div class="row text-center">
@@ -319,32 +370,54 @@
 
 		<img class="img-fluid" src="/svg/bg-testimony.svg" alt="" style="padding:10%;">
 
-
-
 	</div>
-	<div class="container">
-
-        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-        <div class="elfsight-app-13a1901c-53d0-4bef-9bdd-798170e7f735"></div>
-    
-    </div>
 
 
-	<section class="footer" style="background: #0D0A0B;">
+	<section class="footer" style="background: #D0E1FA; padding: 4% 1%;">
 		<div class="container">
 
-			<div class="row text-center">
-				<div class="col">
+			<div class="row">
+				<div class="col-md-4 ">
 					<ul style="list-style: none;">
-						<li>LINK 1</li>
-						<li>LINK 1</li>
-						<li>LINK 1</li>
-						<li>LINK 1</li>
-						<li>LINK 1</li>
+						<li><h4>Fliqaindia</h4></li>
+						<li><h4>Never Miss a thing</h4></li>
+					</ul>
+
+					<form action="" class="form-inline">
+						<div class="form-group mx-sm-3 mb-2">
+							<input type="text" class="form-control" placeholder="email">
+						</div>
+						<button class="btn btn-success mb-2"> Submit</button>
+					</form>
+
+				</div>
+				<div class="col-md-4 "> 
+					<ul style="list-style: none;">
+						<li><h4>Usefull links</h4></li>
+						<li><a href="">Find Your Photographer</a></li>
+						<li><a href="">Apply As Freelancer</a></li>
+						<li><a href="">Tutorial</a></li>
+						<li><a href="">Services</a></li>
+						<li><a href="">Blogs</a></li>
 					</ul>
 				</div>
-				<div class="col"> LINK 1</div>
-				<div class="col"> LINK 1</div>
+				<div class="col-md-4 ">
+					<ul style="list-style: none;">
+						<li><h4 class="">Contact & Support</h4></li>
+						<li><a href="">support@fliqaindia.com</a></li>
+						<li><a href="">+91 91468717485</a></li>
+						<li><a href="">Contact Us</a></li>
+						<li><a href="">Terms & Conditions</a></li>
+						<li><a href="">Privacy & Policies</a></li>
+						<li><a href="">FAQ</a></li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<div class="text-center">
+				<p>COPYRIGHT 2019 FLIQAINDIA PVT.LTD. - ALL RIGHT RESERVED</p>
+				<P>POWERED BY FLIQAINIDA PVT.LTD</P>
+				<P>VERSION 5.0.0</P>
 			</div>
 		</div>
 	</section>
@@ -393,6 +466,26 @@
 				}
 			}
 		});
+
+		$('#recomm').owlCarousel({
+			items: 5,
+			loop: true,
+			margin: 10,
+			autoplay: true,
+			autoplayTimeout: 2500,
+			autoplayHoverPause: false,
+			responsive: {
+				0: {
+					items: 3
+				},
+				600: {
+					items: 3
+				},
+				1000: {
+					items: 3
+				}
+			}
+})
 
 	</script>
 
