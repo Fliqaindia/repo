@@ -1,4 +1,15 @@
-  
+  /*text resposive  */
+
+ .section-header{
+    font-size: 40px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .section-header {
+        font-size: 28px;
+    }
+  }
+
 /* NAVBAR ************************************************************************************** */
 
     .navbar-header.col {
@@ -100,17 +111,4 @@
 
 .recomm-img{
     width: 10px
-}
-
-
-
-/* TRUST  ****************************************************************************************/
-
-.trust{
-    margin: 8% 0;
-    padding: 4% 0;
-}
-
-.trust-text{
-    margin: 8% 0;
 }
