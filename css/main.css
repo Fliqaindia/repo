@@ -1,14 +1,26 @@
-  /*text resposive  */
+  		/* width */
+          ::-webkit-scrollbar {
+			width: 8px;
+		}
 
- .section-header{
-    font-size: 40px;
-  }
+		/* Track */
+		::-webkit-scrollbar-track {
+			background: rgb(255, 255, 255);
+		}
 
-  @media only screen and (max-width: 600px) {
-    .section-header {
-        font-size: 28px;
-    }
-  }
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+			background: #D0E1FA;
+		}
+
+		/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+			background: #2B9DB6;
+		}
+  
+		.header{
+			margin: 4% 0;
+		}
 
 /* NAVBAR ************************************************************************************** */
 

@@ -16,34 +16,16 @@
 
 	<link rel="stylesheet" href="/css/main.css">
 
-	<style>
-		/* width */
-		::-webkit-scrollbar {
-			width: 8px;
-		}
-
-		/* Track */
-		::-webkit-scrollbar-track {
-			background: rgb(255, 255, 255);
-		}
-
-		/* Handle */
-		::-webkit-scrollbar-thumb {
-			background: #D0E1FA;
-		}
-
-		/* Handle on hover */
-		::-webkit-scrollbar-thumb:hover {
-			background: #2B9DB6;
-		}
-	</style>
-
 </head>
 
 <body>
+
+
+	<!-- Navbar ******************************************************************************* -->
+
 	<nav class="navbar navbar-expand-lg navbar-light fixed-top shadow" style="background: #D0E1FA;">
 		<div class="navbar-header d-flex col">
-			<a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+			<a class="navbar-brand" href="/index.html">FI</a>
 			<button type="button" data-target="#navbarCollapse" data-toggle="collapse"
 				class="navbar-toggle navbar-toggler ml-auto">
 				<span class="navbar-toggler-icon"></span>
@@ -57,9 +39,10 @@
 		<div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
 
 			<ul class="nav navbar-nav mx-auto">
-				<li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">About</a></li>
-				<li class="nav-item dropdown">
+				<li class="nav-item active"><a href="/index.html" class="nav-link">Home</a></li>
+				<li class="nav-item"><a href="/about.html" class="nav-link">About Us</a></li>
+				<li class="nav-item"><a href="/services.html" class="nav-link">Services</a></li>
+				<!-- <li class="nav-item dropdown">
 					<a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Services <b
 							class="caret"></b></a>
 					<ul class="dropdown-menu">
@@ -68,10 +51,12 @@
 						<li><a href="#" class="dropdown-item">Graphic Design</a></li>
 						<li><a href="#" class="dropdown-item">Digital Marketing</a></li>
 					</ul>
-				</li>
-				<li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
-				<li class="nav-item "><a href="#" class="nav-link">Blog</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+				</li> -->
+				<li class="nav-item"><a href="freelancers.html" class="nav-link">Freelancers</a></li>
+				<li class="nav-item "><a href="blog.html" class="nav-link">Blog</a></li>
+				<li class="nav-item"><a href="tout&travel.html" class="nav-link">Tour & Travel</a></li>
+				<li class="nav-item "><a href="tutorial.html" class="nav-link">Tutorial</a></li>
+				<li class="nav-item "><a href="contact.html" class="nav-link">Contact Us</a></li>
 			</ul>
 
 			<ul class="nav navbar-nav navbar-right ml-auto">
@@ -84,14 +69,21 @@
 		</div>
 	</nav>
 
+
+	<!-- Hero -Carosel ******************************************************************************* -->
+	
 	<style>
+		.hero-top{
+		}
+		
 		.hero-carosel {
 			margin-top: 4%;
 		}
 
 		@media only screen and (max-width: 600px) {
+
 			.hero-carosel {
-				margin-top: 20%;
+				margin-top: 16%;
 			}
 
 			#hero-carosel .item img {
@@ -110,24 +102,56 @@
 	</style>
 
 
+<div class="hero-top">
 	<div id="hero-carosel" class="hero-carosel owl-carousel owl-theme ">
 
-		<div class="item"><img src="img/1-01_optimized-0000.jpg"></div>
-		<div class="item"><img src="img/2-01_optimized.jpg"></div>
-		<div class="item"><img src="img/3-01_optimized.jpg"></div>
-		<div class="item"><img src="img/4-01_optimized.jpg"></div>
+		<div class="item"><img src="https://via.placeholder.com/100x43.png"></div>
+		<div class="item"><img src="https://via.placeholder.com/100x43.png"></div>
+		<div class="item"><img src="https://via.placeholder.com/100x43.png"></div>
 
 	</div>
+</div>
 
+
+	<!-- Book Now Button ******************************************************************************* -->
+	
+
+
+	<style>
+
+		.booknow{
+			margin: 2% 0;
+		}
+		.btn-res{
+			background-color: #2B9DB6;
+			color: #fff;
+			padding: 10px 60px;
+		}
+
+		@media only screen and (max-width: 600px) {
+		
+			.booknow{
+				margin: 1% 0;
+			}
+			.btn-res{
+			font-size: 14px;
+			
+			color: #fff;
+			padding: 10px 40px;
+			}
+		}
+		</style>
 
 	<section class="booknow">
 		<div class="text-center">
-			<button type="button" class="btn btn-lg rounded-pill shadow"
-				style="background-color: #2B9DB6;color: #fff;padding: 8px 60px;"> Book Now </button>
+			<button type="button" class="btn btn-lg rounded-pill shadow btn-res"
+				style="background-color: #2B9DB6;"> Book Now </button>
 		</div>
 	</section>
 
 
+	<!-- Multi Carosel  ******************************************************************************* -->
+	
 	<style>
 		#multi-carosel .item img {
 			display: block;
@@ -140,6 +164,12 @@
 			background-color: #D0E1FA;
 			border: none;
 		}
+
+		@media only screen and (max-width: 600px) {
+			.mcct{
+				font-size: 10px;
+			}
+		}
 	</style>
 
 	<section class="multi-carosel" style="background: #D0E1FA;">
@@ -151,66 +181,54 @@
 					<div class="card">
 						<img src="/svg/wedding.svg" class="card-img-top" alt="...">
 						<div class="card-body">
-							<p class="card-text">Wedding Photography</p>
+							<p class="mcct">Wedding Photography</p>
 						</div>
 					</div>
-					<!-- <img class="multi-carosel-svg" src="/svg/wedding.svg" width="120">
-					<h6 class="multi-carosel-text">Wedding Photography</h6> -->
 				</div>
 
 				<div class="item">
 					<div class="card">
 						<img src="/svg/beach.svg" class="card-img-top" alt="...">
 						<div class="card-body">
-							<p class="card-text">Beach Photography</p>
+							<p class="mcct">Beach Photography</p>
 						</div>
 					</div>
-					<!-- <img class="multi-carosel-svg" src="/svg/beach.svg" width="120">
-					<h6 class="multi-carosel-text">Beach Photography</h6> -->
 				</div>
 
 				<div class="item">
 					<div class="card">
 						<img src="/svg/love.svg" class="card-img-top" alt="...">
 						<div class="card-body">
-							<p class="card-text">Pre Wedding Shoot</p>
+							<p class="mcct">Pre Wedding Shoot</p>
 						</div>
 					</div>
-					<!-- <img class="multi-carosel-svg" src="svg/love.svg">
-					<h6 class="multi-carosel-text">Pre Wedding Shoot</h6> -->
 				</div>
 
 				<div class="item">
 					<div class="card">
 						<img src="/svg/influencer.svg" class="card-img-top" alt="...">
 						<div class="card-body">
-							<p class="card-text">portfolio Shoot</p>
+							<p class="mcct">portfolio Shoot</p>
 						</div>
 					</div>
-					<!-- <img class="multi-carosel-svg" src="/svg/influencer.svg">
-					<h6 class="multi-carosel-text">portfolio Shoot</h6> -->
 				</div>
 
 				<div class="item">
 					<div class="card">
 						<img src="svg/drone.svg" class="card-img-top" alt="...">
 						<div class="card-body">
-							<p class="card-text">Drone Service</p>
+							<p class="mcct">Drone Service</p>
 						</div>
 					</div>
-					<!-- <img class="multi-carosel-svg" src="svg/drone.svg">
-					<h6 class="multi-carosel-text">Drone Service</h6> -->
 				</div>
 
 				<div class="item">
 					<div class="card">
 						<img src="svg/graphics.svg" class="card-img-top" alt="...">
 						<div class="card-body">
-							<p class="card-text">Graphics</p>
+							<p class="mcct">Graphics</p>
 						</div>
 					</div>
-					<!-- <img src="svg/graphics.svg" width="120">
-					<h6 class="multi-carosel-text">Graphics</h6> -->
 				</div>
 
 			</div>
@@ -219,8 +237,120 @@
 
 
 
+<style>
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+            transform: translateX(calc(-250px * 7));
+  }
+}
 
-	<style>
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+            transform: translateX(calc(-250px * 7));
+  }
+}
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.slider::before, .slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 20s linear infinite;
+          animation: scroll 20s linear infinite;
+  display: -webkit-box;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+
+	</style>
+
+<div class="">
+	<div class="slider">
+		<div class="slide-track">
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+			</div>
+			<div class="slide">
+				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+			</div>
+		</div>
+	</div>
+</div>
+
+
+	<!-- <style>
 		.about-container {
 			position: relative;
 			text-align: center;
@@ -270,10 +400,10 @@
 
 	</section>
 
+ -->
 
 
-
-	<style>
+	<!-- <style>
 		.recomm {
 			padding: 4% 0 0 0;
 		}
@@ -355,8 +485,10 @@
 		</div>
 	</section>
 
+ -->
 
-
+	
+<!-- 
 	<style>
 		.ser-card {
 			padding: 1.5%;
@@ -496,20 +628,244 @@
 		</div>
 
 	</section>
+ -->
 
-	
 
-	<div class="text-center my-4">
-		<button type="button" class="btn btn-lg shadow"
-			style="background-color: #592E83;color: #fff;border-radius: 23px;padding: 8px 60px;"> Explore More </button>
+
+
+	<!--  -->
+	<section>
+		<div class="container my-4">
+
+			<h2 class="text-center header">Services We Offer</h2>
+
+			<div class="row">
+
+				<div class="col-md-6 col-sm-12">
+
+					<div class="card mb-3 shadow-lg" style="background-color: #D8DFFC;">
+						<div class="row no-gutters">
+
+						  <div class="col">
+							<div class="card-body">
+							  <h4 class="card-title text-center">Card title</h4>
+							</div>
+						  </div>
+
+						  <div class="col">
+							<img src="/img/ser-4.jpg" class="card-img" alt="...">
+						  </div>
+
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-md-6 col-sm-12">
+
+					<div class="card mb-3 shadow-lg" style="background-color: #EBD8D0;">
+						<div class="row no-gutters">
+
+						  <div class="col">
+							<div class="card-body">
+							  <h4 class="card-title text-center">Card title</h4>
+							</div>
+						  </div>
+
+						  <div class="col">
+							<img src="/img/ser-3.jpg" class="card-img" alt="...">
+						  </div>
+
+						</div>
+					  </div>
+
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col-md-6 col-sm-12">
+
+					<div class="card mb-3 shadow-lg" style="background-color: #e3ff94;">
+						<div class="row no-gutters">
+
+						  <div class="col">
+							<div class="card-body">
+							  <h4 class="card-title text-center">Card title</h4>
+							</div>
+						  </div>
+
+						  <div class="col">
+							<img src="/img/ser-2.jpg" class="card-img" alt="...">
+						  </div>
+
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-md-6 col-sm-12">
+
+					<div class="card mb-3 shadow-lg" style="background-color: #EAF6FF;">
+						<div class="row no-gutters">
+
+						  <div class="col">
+							<div class="card-body">
+							  <h4 class="card-title text-center">Card title</h4>
+							</div>
+						  </div>
+
+						  <div class="col">
+							<img src="/img/ser-1.jpg" class="card-img" alt="...">
+						  </div>
+
+						</div>
+					  </div>
+
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col-md-6 col-sm-12">
+
+					<div class="card mb-3 shadow-lg" style="background-color: #D8DFFC;">
+						<div class="row no-gutters">
+
+						  <div class="col">
+							<div class="card-body">
+							  <h4 class="card-title text-center">Card title</h4>
+							</div>
+						  </div>
+
+						  <div class="col">
+							<img src="/img/ser-4.jpg" class="card-img" alt="...">
+						  </div>
+
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-md-6 col-sm-12">
+
+					<div class="card mb-3 shadow-lg" style="background-color: #EBD8D0;">
+						<div class="row no-gutters">
+
+						  <div class="col">
+							<div class="card-body">
+							  <h4 class="card-title text-center">Card title</h4>
+							</div>
+						  </div>
+
+						  <div class="col">
+							<img src="/img/ser-3.jpg" class="card-img" alt="...">
+						  </div>
+
+						</div>
+					  </div>
+
+				</div>
+
+			</div>
+
+
+		</div>
+	</section>
+
+
+	<style>
+		.exploremore{
+			margin: 1% 0;
+		}
+		.btn-res{
+			background-color: #2B9DB6;
+			color: #fff;
+			padding: 10px 60px;
+		}
+
+		@media only screen and (max-width: 600px) {
+
+			.btn-res{
+			font-size: 14px;
+			
+			color: #fff;
+			padding: 10px 40px;
+			}
+		}
+
+	</style>
+
+	<div class="text-center exploremore" >
+		<button type="button" class="btn shadow btn-res btn-lg rounded-pill shadow"
+			style="background-color: #FF3D6F"> Explore More </button>
 	</div>
 
 
 
 	<style>
-		.trust{
-			padding: 3% 0;
-		}
+
+	</style>
+
+	<section>
+		<div class="container-fluid">
+
+			<h2 class="text-center header">Offers For You</h2>
+
+			<section class="ofu">
+				<div class="">
+		
+					<div id="ofu" class="owl-carousel owl-theme text-center">
+		
+						<div class="item">
+							<div class="card">
+								<img src="https://via.placeholder.com/100x70.png" class="card-img-top" alt="...">
+							</div>
+						</div>
+		
+						<div class="item">
+							<div class="card">
+								<img src="https://via.placeholder.com/100x70.png" class="card-img-top" alt="...">
+							</div>
+						</div>
+		
+						<div class="item">
+							<div class="card">
+								<img src="https://via.placeholder.com/100x70.png" class="card-img-top" alt="...">
+							</div>
+						</div>
+		
+						<div class="item">
+							<div class="card">
+								<img src="https://via.placeholder.com/100x70.png" class="card-img-top" alt="...">
+							</div>
+						</div>
+		
+						<div class="item">
+							<div class="card">
+								<img src="https://via.placeholder.com/100x70.png" class="card-img-top" alt="...">
+							</div>
+						</div>
+		
+						<div class="item">
+							<div class="card">
+								<img src="https://via.placeholder.com/100x70.png" class="card-img-top" alt="...">
+							</div>
+						</div>
+		
+					</div>
+				</div>
+			</section>
+
+		</div>
+	</section>
+
+
+
+
+	<style>
 		.okf{
 			background-color: #D0E1FA;
 			text-align: center;
@@ -524,12 +880,15 @@
 		}
 	</style>
 
-	<section class="trust" style="background: #D0E1FA;">
+
+
+	<section style="background: #D0E1FA;">
 
 		<div class="container-fluid">
-			<h1 class="my-4 text-center section-header">
+
+			<h2 class="text-center py-4">
 				Our Key Features
-			</h1>
+			</h2>
 
 			<div class="row">
 
@@ -590,61 +949,12 @@
 
 
 	
-
-		<div class="container">
-
-			<div class="area-heading row">
-                <h1 class="my-4 text-center section-header">
-					Latest Blog Posts
-				</h1>
-				
-            </div>
-            
-			<div class="row ">
-				<div class="col col-md-4">
-			 	
-            <div class="card" style="width: 18rem;">
-				<img src="img/card1.png" class="card-img-top" alt="...">
-				<div class="card-body">
-					<img src="img/mistakes.png" class="card-img-top" alt="MistakesTitle">
-				
-				</div>
-			  </div>
-			</div>	  
-				
-			<div class="col col-md-4">
-			  <div class="card" style="width: 18rem;">
-				<img src="img/card2.png" class="card-img-top" alt="Photography">
-				<div class="card-body">
-					<img src="img/covid.png" class="card-img-top" alt="PhotographyTitle"></div>
-			  </div>
-			</div>
-
-			<div class="col col-md-4 ">	
-			  <div class="card" style="width: 18rem;">
-				<img src="img/card3.png" class="card-img-top" alt="Photography">
-				<div class="card-body">
-					<img src="img/portrait.png" class="card-img-top" alt="PortraitTitle">
-					</div>
-			  </div>
-				  
-		    </div>	  
-        </div>
-
-		</div>
-
-	
 	<div class="container">
 
 		<script src="https://apps.elfsight.com/p/platform.js" defer></script>
 		<div class="elfsight-app-13a1901c-53d0-4bef-9bdd-798170e7f735"></div>
 
 	</div>
-
-
-
-
-
 
 	<section class="footer" style="background: #D0E1FA; padding: 4% 1%;">
 		<div class="container">
@@ -718,79 +1028,10 @@
 
 	<script src="/js/owl.carousel.js"></script>
 
-	<script>
-		$("#hero-carosel").owlCarousel({
-			items: 1,
-			loop: true,
-			margin: 10,
-			autoplay: true,
-			autoplayTimeout: 3500,
-			autoplayHoverPause: false
-		});
+	<script src="./js/main.js"></script>
 
-		$("#multi-carosel").owlCarousel({
-			dots: false,
-			items: 5,
-			loop: true,
-			margin: 10,
-			autoplay: true,
-			autoplayTimeout: 2500,
-			autoplayHoverPause: false,
-			responsive: {
-				0: {
-					items: 2
-				},
-				600: {
-					items: 2
-				},
-				1000: {
-					items: 4
-				}
-			}
-		});
-
-		$('#recomm').owlCarousel({
-			items: 5,
-			loop: true,
-			margin: 10,
-			autoplay: true,
-			autoplayTimeout: 2500,
-			autoplayHoverPause: false,
-			responsive: {
-				0: {
-					items: 3
-				},
-				600: {
-					items: 3
-				},
-				1000: {
-					items: 3
-				}
-			}
-		})
-
-		$('#whoare').owlCarousel({
-			items: 5,
-			loop: true,
-			margin: 10,
-			autoplay: true,
-			autoplayTimeout: 2500,
-			autoplayHoverPause: false,
-			responsive: {
-				0: {
-					items: 3
-				},
-				600: {
-					items: 3
-				},
-				1000: {
-					items: 4
-				}
-			}
-		})
-
-	</script>
 <script type="text/javascript" src="https://apiv2.popupsmart.com/api/Bundle/355355" async> </script>
+
 </body>
 
 </html>
