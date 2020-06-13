@@ -1,0 +1,127 @@
+  		/* width */
+          ::-webkit-scrollbar {
+			width: 8px;
+		}
+
+		/* Track */
+		::-webkit-scrollbar-track {
+			background: rgb(255, 255, 255);
+		}
+
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+			background: #D0E1FA;
+		}
+
+		/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+			background: #2B9DB6;
+		}
+  
+		.header{
+			margin: 4% 0;
+		}
+
+/* NAVBAR ************************************************************************************** */
+
+    .navbar-header.col {
+        padding: 0 !important;
+    }
+
+    .navbar {
+        background: #fff;
+        padding: 12px 26px;
+        /* border-bottom: 1px solid #d6d6d6; */
+        box-shadow: 0 0 4px rgba(0, 0, 0, .1);
+    }
+
+    .nav-link img {
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        margin: -8px 0;
+        float: left;
+        margin-right: 10px;
+    }
+
+    .navbar .navbar-brand {
+        color: #555;
+        padding-left: 0;
+        font-size: 20px;
+        padding-right: 50px;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .navbar .navbar-brand b {
+        font-weight: bold;
+        color: #000000;
+    }
+
+    .navbar ul.nav li a:hover,
+    .navbar ul.nav li a:focus {
+        color: #000000 !important;
+    }
+
+    .navbar ul.nav li.active a,
+    .navbar ul.nav li.active a:hover,
+    .navbar ul.nav li.active a:focus {
+        color: #000000 !important;
+        background: transparent !important;
+    }
+
+    .navbar .dropdown-item i {
+        font-size: 16px;
+        min-width: 22px;
+    }
+
+    .navbar .nav-item {
+        margin: 0 10px 0 10px;
+    }
+
+    .navbar .nav-item.open>a {
+        background: none !important;
+    }
+
+    .navbar .dropdown-menu {
+        border-radius: 1px;
+        border-color: #e5e5e5;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
+    }
+
+    .navbar .dropdown-menu li a {
+        color: #777;
+        padding: 8px 20px;
+        line-height: normal;
+    }
+
+
+    /* MEDIA QUERY NAVBAR ******************************************************************************/
+
+    @media only screen and (max-width: 600px) {
+        .navbar-right {
+          display: none;
+        }
+      }
+
+
+/* MULTI CAROSEL ****************************************************************************************/
+
+.multi-carosel{
+    margin: 2% 0% 0% 0%;
+    padding: 4% 0% 0% 0%;
+    color: #230C33;
+    text-transform: uppercase;
+}
+
+.multi-carosel-text{
+    margin: 8% 0;
+}
+
+#recomm{
+    margin: 2%;
+}
+
+.recomm-img{
+    width: 10px
+}
+
